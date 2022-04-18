@@ -1,0 +1,28 @@
+@mixin gridHorizontal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 3rem;
+
+}
+
+@mixin gridVertical {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(minmax(10%, 80%));
+
+}
+
+@mixin heading {
+
+    h1 {
+        text-align: center;
+        background-color: $red;
+        color: $white;
+        padding: 1rem;
+    }
+}

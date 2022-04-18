@@ -1,0 +1,31 @@
+
+.news_grid {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+    "navbar"
+    "banner"
+    "news_scroll"
+    "tieke"
+    "footer" ;
+
+    .navbar{
+        grid-area: navbar;
+    }
+
+    .banner{
+        grid-area: banner;
+    }
+
+    .news_scroll{
+        grid-area: news_scroll;
+    }
+
+    .tieke{
+        grid-area: tieke;
+    }
+
+    .footer{
+        grid-area: footer;
+    }
+}

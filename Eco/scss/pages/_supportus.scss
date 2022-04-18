@@ -1,0 +1,51 @@
+
+.supportus_grid {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-areas:
+    "navbar"
+    "img-banner"
+    "support-intro"
+    "donate"
+    "friend"
+    "member"
+    "member-groups"
+    "volunteer"
+    "footer" ;
+
+    .navbar{
+        grid-area: navbar;
+    }
+
+    .img-banner{
+        grid-area: img-banner;
+    }
+
+    .support-intro{
+        grid-area: support-intro;
+    }
+
+    .donate{
+        grid-area: donate;
+    }
+
+    .friend{
+        grid-area: friend;
+    }
+
+    .member{
+        grid-area: member;
+    }
+
+    .member-groups{
+        grid-area: member-groups;
+    }
+
+    .volunteer{
+        grid-area: volunteer;
+    }
+
+    .footer{
+        grid-area: footer;
+    }
+}

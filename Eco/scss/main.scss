@@ -1,0 +1,39 @@
+@import '../scss/mixin/mixins';
+
+//abstracts
+@import 'abstracts/colour';
+@import 'abstracts/font';
+@import 'abstracts/reset';
+@import 'abstracts/scrollbar';
+@import 'components/contact';
+@import 'abstracts/helpers';
+@import 'abstracts/type';
+@import 'abstracts/hover';
+
+//components
+@import 'components/slider';
+@import 'components/photolinks';
+@import 'components/news';
+@import 'components/supportus';
+@import 'components/charity';
+@import 'components/img-banner';
+@import 'components/button';
+@import 'components/aboutus';
+@import 'components/news-page';
+@import 'components/tieke';
+@import 'components/donate';
+@import 'components/member';
+@import 'components/friend';
+@import 'components/volunteer';
+
+//layouts
+@import 'layout/footer';
+@import 'layout/navbar';
+
+//pages
+@import 'pages/home';
+@import 'pages/aboutus';
+@import 'pages/news';
+@import 'pages/supportus';
+
+

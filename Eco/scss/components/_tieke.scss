@@ -1,0 +1,66 @@
+.tieke {
+  display: flex;
+
+
+  &__email {
+    margin-bottom: 8px;
+    height: 30px;
+    padding: 0 8px;
+    max-width: 100%;
+    border-radius: 5px;
+    border: none;
+  }
+
+  &__form {
+    @include gridHorizontal;
+  }
+
+  &__img {
+    width: 100%;
+    border-radius: 30px 0 0 30px;
+  }
+}
+
+
+.tieke__subscribe {
+  border-radius: 0px 30px 30px 0px;
+  background-color: $cream;
+  padding-left: 2rem;
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto;
+
+  .info {
+    display: flex;
+    vertical-align: middle;
+  }
+
+  input {
+    width: 20rem;
+  }
+
+  form{
+    padding-bottom: 1rem;
+  }
+
+  p {
+    padding: 1rem;
+  }
+
+  h1 {
+    padding: 1rem;
+  }
+}
+
+
+// mobile
+@media (max-width: 1200px) {
+  .tieke__img {
+    border-radius: 30px 30px 0 0;
+  }
+
+  .tieke__subscribe {
+    border-radius: 0 0 30px 30px;
+  }
+
+}

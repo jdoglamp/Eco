@@ -1,0 +1,37 @@
+.friend {
+    padding-bottom: 2rem;
+
+    &__heading {
+        @include heading;
+    }
+
+    &__sections {
+        @include gridVertical();
+        margin-top: 3rem;
+    }
+
+    &__info:nth-child(1),
+    &__info:nth-child(3) {
+        color: $grey;
+        background-color: $cream;
+        border-radius: 15px;
+        padding: 1rem;
+        height: auto;
+    }
+
+    &__categories {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    &__type {
+        border: 1px solid $white;
+        background-color: $primary;
+        color: $white;
+        border-radius: 15px;
+        padding: 1rem;
+    }
+
+}

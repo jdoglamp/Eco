@@ -1,0 +1,17 @@
+.button_box {
+    position: relative;
+    float: left;
+  
+  
+  & .button_hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+  }
+  
+  &:hover .button_hover {
+    display: block;
+    transition: 0.1s ease-in-out;
+  }
+}

@@ -1,0 +1,57 @@
+.donate__heading {
+    @include heading;
+}
+
+.donate__method {
+    @include gridVertical;
+
+    padding: 2rem;
+    border-radius: 15px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-color: $cream;
+
+    h1 {
+        font-size: 24px;
+        font-weight: $heavy-weight;
+        color: $primary;
+    }
+
+    p {
+        margin-top: 10px;
+    }
+}
+
+
+.donate__payment {
+    padding: 0;
+    margin-left: 0;
+    width: auto;
+
+    a:active,
+    a:visited {
+        color: $primary;
+    }
+
+    a:hover {
+        color: $secondary;
+    }
+
+}
+
+.donate__receipt {
+    width: 100%;
+
+    label {
+        font-size: $font-medium;
+    }
+
+    input {
+        background-color: $white;
+        border: 1px solid $grey;
+        padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+        border-radius: 10px;
+    }
+
+}
+

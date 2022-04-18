@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="../scss/main.css" />
+  <link rel="stylesheet" href="../html/index.html" />
+  <link rel="stylesheet" href="../html/about_us.html" />
+  <link rel="stylesheet" href="../html/support_us.html" />
+
+  <script src="../main.js"></script>
+
+  <link rel="stylesheet" href="https://use.typekit.net/dno2qun.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>ECO - Environment and Conservation Organisations of Aotearoa New Zealand</title>
+  <link rel="icon" type="image/x-icon" href="../img/logo.jpeg">
+</head>
+
+<body>
+  <div class="news_grid">
+    <div class="navbar">
+      <ul class="navbar__menu">
+        <li><a href=index.html><img src="../img/logo.jpeg"></a></li>
+
+        <li><a href=index.html>
+            <button class="button button--nav button--medium" data-maori="Kāinga">Home</button>
+          </a></li>
+
+        <li><a href=about_us.html>
+            <button class="button button--nav button--medium" data-maori="Mō Mātou">About Us</button>
+          </a></li>
+
+        <li><a href="news.html">
+            <button class="button button--nav button--medium" data-maori="Ngā Pānui">News</button>
+          </a></li>
+
+        <li><a href=support_us.html>
+            <button class="button button--nav-action button--medium" data-maori="Tautoko Mai">Support Us</button>
+          </a></li>
+
+        <li>
+          <a href="support_us.html#donate">
+            <button class="button button--donate button--medium" data-maori="Takoha Mai">Donate</button>
+          </a>
+        </li>
+
+        <li>
+          <div class="navbar__search-bar">
+            <input type="text" placeholder="Search.." name="search">
+            <img src="../buttons/search.png">
+          </div>
+        </li>
+
+      </ul>
+
+
+      <button class="navbar-hamburger js-hamburger">
+        <div class="navbar-hamburger__bar"></div>
+      </button>
+
+      <nav class="navbar__mobile-nav js-mobile-nav">
+        <a href="../html/index.html">Home</a>
+        <a href="../html/about_us.html">About Us</a>
+        <a href="../html/news.html">News</a>
+        <a href="../html/support_us.html">Support Us</a>
+        <a href="support_us.html#donate">Donate</a>
+      </nav>
+
+    </div>
+
+    <div class="img-banner">
+      <div class="img-banner__text slider-text">
+        <h2>Support Us<br>Tautoko mai</h2>
+      </div>
+      <img src="../img/supportus_img.jpg">
+    </div>
+
+    <div class="support-intro center--large text">
+      <div class="support-intro__text">
+        <p>There are a number of ways you can support ECO. One of the most important of which is by getting behind the
+          issues we are working on. Efforts by individuals raising their concerns with MPs, through letters to newspaper
+          editors, by ringing talkback radio, writing submissions are vitally important to improving the way the
+          environment is treated. Even making other people aware of issues is important. Take a look at the ECO News
+          page
+          to see some of the issues we are working on.</p><br>
+        <p>We need support to enable us to remain independently funded and autonomous – we are a non-profit organisation
+          and we rely on our supporters to contribute funds to cover our running costs. ECO’s campaigns are run by
+          committed unpaid workers with decades of collective experience and in-depth knowledge of the issues. See below
+          to find out you can financially support ECO. As well as financial support ECO needs professional services and
+          goods, information on issues in your area, publicity and volunteer workers.</p>
+      </div>
+      <div class="support-intro__charity-msg">
+        <h1>A charity you can trust / He umanga aroha whai mana</h1>
+        <p> ECO is a registered charitable entity under the Charities Act 2005.
+          <br><br>Registration no CC41565
+          <br> ECO GST No is 0296-11327
+        </p>
+      </div>
+    </div>
+
+    <div id="donate" class="donate">
+      <div class="donate__heading">
+        <h1>Donate / Takoha mai</h1>
+      </div>
+      <div class="donate__method form-details">
+        <div class="donate__option">
+          <h1>Internet Banking</h1>
+          <p>If you would like to donate by online banking, please see our bank details:
+            <br> Bank: Kiwibank
+            <br>Account Number: 38 9016 0185477 00
+          </p>
+        </div>
+
+        <div class="donate__option">
+          <h1>Cheques</h1>
+          <p>If you would like to donate by sending in a cheque, please send them to:
+            <br><br>
+          <ul>
+            <li>ECO Inc.</li>
+            <li>PO Box 11-057</li>
+            <li>Wellington</li>
+            <li>New Zealand</li>
+          </ul>
+          </p>
+        </div>
+
+        <div class="donate__option">
+          <h1>Give a little</h1>
+          <p>Donation Frequency</p>
+          <button class="button button--read" data-maori="One off">One off</button>
+          <button class="button button--read" data-maori="Weekly">Weekly</button>
+          <button class="button button--read" data-maori="Fortnightly">Fortnightly</button>
+          <button class="button button--read" data-maori="Monthly">Monthly</button>
+
+          <p>Donation Amount ($NZD)</p>
+          <input type="text">
+
+          <p>Donation Message (optional)</p>
+          <textarea rows="4" cols="20"></textarea>
+
+          <div class="donate__payment">
+            <p>Donation Method</p>
+            <input type="radio" name="payment" value="card">
+            <label for="card">Credit/Debit Card</label><br>
+            <input type="radio" name="payment" value="internet">
+            <label for="internet">Internet Banking</label><br>
+            <input type="radio" name="payment" value="voucher">
+            <label for="voucher">Give a Little Voucher</label><br>
+            <input type="radio" name="payment" value="wallet">
+            <label for="wallet">Give a Little Wallet (<a href="">Log in required</a>)</label>
+          </div>
+
+          <div class="donate__receipt">
+            <p>Receipt Details</p>
+            <label>First name</label><br>
+            <input type="text"><br><br>
+            <label>Last name</label><br>
+            <input type="text"><br><br>
+            <label>Email address</label><br>
+            <input type="text"><br>
+            <input type="checkbox"><label> Email me updates</label>
+          </div>
+
+
+          <div class="donate__name">
+            <p>Name with Donation</p>
+            <input type="radio" name="donation" value="first">
+            <label>Display my first name</label><br>
+            <input type="radio" name="donation" value="guest">
+            <label>Display as "Guest Donor"</label><br>
+            <input type="radio" name="donation" value="donor">
+            <label>Enter other name</label><br>
+            <input type="text">
+          </div>
+
+          <button class="button button--payment" data-maori="Toro ki te utunga">Proceed to payment</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="friend">
+    <div class="friend__heading">
+      <h1 id="friend">Become a Friend / Whakahoa mai</h1>
+    </div>
+    <div class="friend__sections">
+
+      <div class="friend__info text">
+        <p>
+        <ul>
+          <li>Help ensure that there is a strong New Zealand advocate for the environment</li>
+          <li>Receive up-to-date information so you can participate in protecting the environment,
+            including ECO’s quarterly newsletter ECOlink</li>
+          <li>Receive invitations to conferences and seminars</li>
+          <li>Enable ECO to develop and realise its long-term environmental goals</li>
+        </ul>
+        </p>
+      </div>
+
+      <div class="friend__info text">
+        <h2>Subscribe as a:</h2>
+        <div class="friend__categories">
+          <p class="friend__type">Friend<br>A standard friend rate<br>$45 /year</p>
+          <p class="friend__type">Sustaining Friend<br>For someone who is employed and can contribute more<br>$120 /year
+          </p>
+          <p class="friend__type">Corporate<br>For a corporate person or organisation<br>$500 /year</p>
+          <p class="friend__type">Unwaged Friend<br>For someone who doesn’t have a wage but still wants to
+            contribute<br>$25 /year</p>
+        </div>
+      </div>
+
+      <div class="friend__info form-details">
+        <h2>Registration</h2>
+        <label>First name*</label><br>
+        <input type="text"><br><br>
+        <label>Last name*</label><br>
+        <input type="text"><br><br>
+        <label>Email address*</label><br>
+        <input type="text"><br><br>
+        <label>Phone number*</label><br>
+        <input type="text"><br><br>
+        <label>Your interests and expertise*</label><br>
+        <textarea rows="4" cols="40"></textarea><br><br>
+        <label>Groups or societies you may be affiliated with</label><br>
+        <textarea rows="4" cols="40"></textarea>
+
+        <p>Friend Category*</p>
+        <input type="radio" name="friend">
+        <label>Friend</label><br>
+        <input type="radio" name="friend">
+        <label>Sustaining Friend</label><br>
+        <input type="radio" name="friend">
+        <label>Corporate Friend</label><br>
+        <input type="radio" name="friend">
+        <label>Unwaged Friend</label><br>
+
+        <p>Payment Method*</p>
+        <input type="radio" name="friend">
+        <label>Credit/Debit Card</label><br>
+        <input type="radio" name="friend">
+        <label>Internet Banking</label><br>
+        <input type="radio" name="friend">
+        <label>Give a Little</label><br>
+        <input type="radio" name="friend">
+        <label>Cheque</label><br>
+
+        <button class="button button" data-maori="Toro ki te utunga">Proceed to payment</button>
+
+        <p>Windex will open afterwards to proceed with credit/debit card payment</p>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="member">
+    <div class="member__heading">
+      <h1 id="member">Member Groups / Ngā rōpū mema</h1>
+    </div>
+    <img class="member__image" src="../img/member_img.jpg">
+
+    <div class="member__intro text center--large">
+      <p>Membership is by application to the ECO Executive for groups which are:</p>
+      <p>Committed wholly or partly to work in various aspects of environment and conservation;
+        and whose aims and policy are in sympathy with those of ECO.</p>
+      <ul>
+        <li>Subscriptions for member organisations are determined by the size of the organisation:</li>
+        <li>Student Organisation: $35 p.a.</li>
+        <li>1-100 members: $60 p.a.</li>
+        <li>101-1000 members: $120 p.a.</li>
+        <li>1001-4999 members: $400 p.a.</li>
+        <li>5000+ members: $1,000 p.a. (all GST inclusive)</li>
+      </ul>
+      <button class="button button--read" data-maori="PDF Application">PDF Application</button>
+      <button class="button button--read" data-maori="How to apply">How to apply</button>
+
+    </div>
+  </div>
+
+
+  <div class="member-groups center--large">
+
+    <div class="member-groups__locations">
+      <div class="member-groups__tab js-member-tab-content">
+        <p class="active">Northland</p>
+        <p>Auckland</p>
+        <p>Bay of Plenty</p>
+        <p>Waikato</p>
+        <p>Manawatu/Whanganui/Taranaki</p>
+        <p>Hawkes Bay</p>
+        <p>Wellington</p>
+        <p>Nelson Marlborough</p>
+        <p>West Coast</p>
+        <p>Canterbury</p>
+        <p>Southland/Otago</p>
+      </div>
+    </div>
+
+    <div class="member-groups__content">
+
+      <div class="member-groups__scroll js-member-content">
+        <div class="active">
+          <!-- Northland -->
+          <p>
+          <uL>
+            <li>Eastern Bay of Islands Preservation Society</li>
+            <li>Email (Secretary): m.horsburgh@xtra.co.nz</li>
+            <li>Address: P O Box 25 876, St Heliers, Auckland 1740</li>
+            <li>Geographical coverage: Eastern Bay of Islands</li>
+            <li>Main issues: Conservation of the Bay of Islands to preserve the “outstanding landscape” of this
+              region</li>
+          </uL>
+          </p>
+          <p>
+          <uL>
+            <li>Far North Environment Centre/Te Pokapū Tiaki Taiao O Te Tai Tokerau Trust</li>
+            <li>Email: info@ecocentre.co.nz</li>
+            <li>Phone: (09) 408 1086</li>
+            <li>Address: EcoCentre, 8 South Road, Kaitaia 0410</li>
+            <li>Website: www.ecocentre.co.nz</li>
+            <li>Facebook: www.facebook.com/EcoCentreKaitaia</li>
+            <li>Main issues: promoting sustainable and healthy lifestyles within a resilient local community</li>
+          </uL>
+          </p>
+          <p>
+          <ul>
+            <li>Opua Coastal Preservation Society</li>
+            <li>Email: hnissen@xtra.co.nz</li>
+            <li>Purpose is to develop greater public awareness of the natural environment of the coast and coastal
+              waters in the Opua area in the Far North. </li>
+          </ul>
+          </p>
+        </div>
+
+        <!-- Auckland -->
+        <div>
+          <p>
+          <ul>
+            <li>Civic Trust Auckland</li>
+            <li>Phone: (09) 368 1516</li>
+            <li>Address: PO Box 74049, Greenlane, Auckland</li>
+            <li>Email: cta@civitrustauckland.org.nz</li>
+            <li>Geographical coverage: Auckland</li>
+            <li>Main issues : Protection of natural landforms and preservation of heritage</li>
+          </ul>
+          </p>
+          <p>
+          <ul>
+            <li>EcoMatters Environment Trust</li>
+            <li>Email: info@ecomatters.org.nz</li>
+            <li>Phone: (09) 826 4276</li>
+            <li>Address: PO Box 15 215, New Lynn, Auckland 0640, New Zealand</li>
+            <li>Geographical coverage: Auckland</li>
+            <li>Main issues: Auckland/Waitakere based trust delivering a diverse range of sustainability
+              initiatives.</li>
+          </ul>
+          </p>
+          <p>
+          <ul>
+            <li>Engineers for Social Responsibility</li>
+            <li>Email: neilman@videofoundry.co.nz</li>
+            <li>Geographical coverage: Nationwide</li>
+            <li>Main issues: To raise awareness about the impacts of technologies and to encourage socially
+              responsible and ethical use of technology</li>
+          </ul>
+          </p>
+          <p>
+          <ul>
+            <li>Friends of the Earth</li>
+            <li>Phone: (09) 360 9149</li>
+            <li>Email: foenz@kcbbs.gen.nz</li>
+            <li>Address: PO Box 5599, Wellesley Street, Auckland</li>
+            <li>Geographical coverage: New Zealand branch of the Friends of the Earth International network</li>
+            <li>Main Issues: Watch dog environmental group</li>
+          </ul>
+          </p>
+          <p>
+          <ul>
+            <li>Greenpeace NZ</li>
+            <li>Phone: (09) 630 6317</li>
+            <li>Email: info@greenpeace.org.nz</li>
+            <li>Address: Private Bag 92507, Wellesley Street, Auckland 114</li>
+            <li>Geographical coverage: New Zealand branch of Greenpeace International</li>
+            <li>Main issues: A global campaigning organisation which lobbies to change human behaviors that cause
+              environmental degradation</li>
+          </ul>
+          </p>
+          <p>
+          <ul>
+            <li>Kaipatiki Ecological Restoration Project</li>
+            <li>Phone: (09) 482 1172</li>
+            <li>Address: 17 Lauderdale Rd, Birkdale, Auckland</li>
+            <li>Geographical coverage: North shore, Auckland</li>
+            <li>Main issues: conservation of native bush reserves and community involvement in ecological
+              restoration</li>
+          </ul>
+          </p>
+          <p>
+          <ul>
+            <li>Soil & Health Association of NZ</li>
+            <li>Phone: (09) 419 4536</li>
+            <li>Address: PO Box 36170, Northcote, Auckland</li>
+            <li>Geographical coverage: Nationwide</li>
+            <li>Main issues: Supporting organic food and farming in New Zealand</li>
+          </ul>
+          </p>
+          <p>
+          <ul>
+            <li>Surfbreak Protection Society</li>
+            <li>Address: PO Box 20717, Glen Eden, Auckland</li>
+            <li>Email: available on website</li>
+            <li>Geographical coverage: nationwide</li>
+            <li>Main issues: Protection of New Zealand’s surfbreaks</li>
+          </ul>
+          </p>
+          <p>
+          <ul>
+            <li>Waiheke Sustainability Centre</li>
+            <li>Phone: 09 372 2915</li>
+            <li>Address: Old Oneroa Bowling Club</li>
+            <li>Mako Street Oneroa</li>
+            <li>Waiheke Island 1081</li>
+            <li>Main issues: The Waiheke Resources Trust works to celebrate and protect all the resources we have
+              already, and build capacity and knowledge in the community towards the creation of a resource-full
+              future for all.</li>
+          </ul>
+          </p>
+          <p>
+          <ul>
+            <li>Wildlife Conservation Trust</li>
+            <li>Geographical Coverage: whole of New Zealand</li>
+            <li>Main issues: carry out projects to protect and restore indigenous plants and animals in New
+              Zealand
+            </li>
+            <li>Email: nzinfo@wrt.org.nz, wildlifeconservationtrustnz@gmail.com</li>
+          </ul>
+          </p>
+        </div>
+
+        <!-- Bay of plenty -->
+        <div>
+          <p>
+          <ul>
+            <li>Coromandel Watchdog of Hauraki</li>
+            <li>Email: watchdog@pohutukawa.org.nz</li>
+            <li>Geographical coverage: Coromandel</li>
+            <li>Main issues: Against mining on conservation land in the Coromandel</li>
+          </ul>
+          </p>
+          <p>
+          <ul>
+            <li>Thames Coast Preservation and Protection Society</li>
+            <li>Address: PO Box 396, Thames</li>
+            <li>Geographical coverage: The Thames Coast in the Coromandel Peninsula</li>
+            <li>Main issues: Protection of the Thames coastline and prevention of mining in the Coromandel</li>
+          </ul>
+          </p>
+        </div>
+
+        <!-- Waikato -->
+        <div>
+          <p>
+          <ul>
+            <li>Environmental Futures - Waikato based conservation and resource management group</li>
+            <li>Phone: (07) 889 7910</li>
+            <li>Address: Morrisville 2251</li>
+            <li>Geographical coverage: Waikato region</li>
+            <li>Main issues: Waikato based conservation and resource management promotion organisation</li>
+          </ul>
+          </p>
+          <p>
+          <ul>
+            <li>Kiwis Against Seabed Mining</li>
+            <li>Email: info@kasm.org.nz</li>
+            <li>Suz Hall</li>
+            <li>PO Box 193 , Raglan, New Zealand</li>
+            <li>Media Contact: Phil McCabe</li>
+            <li>Mobile: 027 294 3451</li>
+          </ul>
+          </p>
+          <p>
+          <ul>
+            <li>Te Aroha Earthwatch</li>
+            <li>Phone: (07) 884 7539</li>
+            <li>Geographical coverage: Te Aroha, Waikato</li>
+          </ul>
+          </p>
+        </div>
+
+        <!-- Manawatu/Whanganui/Taranaki -->
+        <div>
+          <p>
+          <ul>
+            <li>Climate Justice Taranaki</li>
+            <li>Phone: (06) 752 4333</li>
+            <li>Geographical coverage: Taranaki and Whanganui</li>
+            <li>Main issues: fracking, oil, gas, resistance and justice</li>
+          </ul>
+          </p>
+          <p>
+          <ul>
+            <li>Environment Network Manawatu</li>
+            <li>Phone: (06) 355 0126</li>
+            <li>Address: Level 2, 74 The Square, Palmerston North.</li>
+            <li>Geographical coverage: Manawatu region</li>
+            <li>Main issues: a network of over forty member organisations that fosters and encourages
+              environmental
+              initiatives in the Manawatu, in areas ranging from sustainable living to wildlife conservation.</li>
+          </ul>
+          </p>
+          <p>
+          <ul>
+            <li>Sustainable Whanganui Trust</li>
+            <li>Phone: (06) 345 5048 email: on website</li>
+            <li>Geographical coverage: Whanganui</li>
+            <li>Main issues: The preservation of Whanganui as a dynamic and viable region in the face of the
+              impending energy, climate and financial disruptions</li>
+          </ul>
+          </p>
+        </div>
+
+        <!-- Hawkes Bay -->
+        <div>
+          <p>
+          <ul>
+            <li>Clean Earth League New Zealand Inc</li>
+            <li>Phone: 06 844 1060</li>
+            <li>Fax: 06 844 1091</li>
+            <li>Email: askus@cleanearth.co.nz</li>
+            <li>PO Box 7305</li>
+            <li>Taradale</li>
+            <li>Napier New Zealand</li>
+          </ul>
+          </p>
+        </div>
+
+        <!-- Wellington -->
+        <div>
+          <p>
+          <ul>
+            <li>Appropriate Technology for Living Association</li>
+            <li>Phone : (04) 972 8699</li>
+            <li>Address: PO Box 27-475, Wellington</li>
+            <li>Geographical coverage: New Zealand, based in Wellington.</li>
+            <li>Main issues: To promote environmentally sustainable alternative technologies and healthy
+              lifestyles
+            </li>
+          </ul>
+          </p>
+
+          <p>
+          <ul>
+            <li>Conservation Volunteers New Zealand</li>
+            <li>Phone: 0800 567 686 (Freecall)</li>
+            <li>Email: info@conservationvolunteers.co.nz</li>
+            <li>Main issues: plant trees and clean up</li>
+          </ul>
+          </p>
+
+          <p>
+          <ul>
+            <li>Clean Earth League New Zealand Inc</li>
+            <li>Phone: 06 844 1060</li>
+            <li>Fax: 06 844 1091</li>
+            <li>Email: askus@cleanearth.co.nz</li>
+            <li>PO Box 7305</li>
+            <li>Taradale</li>
+            <li>Napier New Zealand</li>
+          </ul>
+          </p>
+
+          <p>
+          <ul>
+            <li>Conscious Consumers</li>
+            <li>Nationwide</li>
+            <li>Helping consumers make choices in supporting ethical businesses</li>
+          </ul>
+          </p>
+
+          <p>
+          <ul>
+            <li>East Harbour Environmental Association</li>
+            <li>Email: rashbrooke@xtra.co.nz</li>
+            <li>Geographical coverage: hills and harbour around Eastbourne, Wellington.</li>
+            <li>Maintains and advocates for the environment of the eastern Wellington harbour</li>
+          </ul>
+          </p>
+
+          <p>
+          <ul>
+            <li>GE Free NZ</li>
+            <li>Head office: PO Box 693, Nelson</li>
+            <li>Phone: 03 547 9383</li>
+            <li>Fax 03 547 9329</li>
+            <li>Email: info@gefree.org.nz</li>
+            <li>Nationwide and specific issues contacts here</li>
+            <li>Geographical coverage: Nationwide</li>
+            <li>Main issues: campaigning against genetic engineering in New Zealand</li>
+          </ul>
+          </p>
+
+          <p>
+          <ul>
+            <li>Guardians of Pauatahanui Inlet</li>
+            <li>Email: pauainlet@gmail.com</li>
+            <li>Address: P.O. Box 57 -034, Mana, Porirua 5247</li>
+            <li>Geographical coverage: Pauatahanui Inlet</li>
+            <li>Main issues: Protection of the ecological and cultural values of the Pauatahanui Inlet</li>
+          </ul>
+          </p>
+
+          <p>
+          <ul>
+            <li>National Council of Women</li>
+            <li>Email: office@ncwnz.org.nz</li>
+            <li>PO Box 25-498, Wellington 6146.</li>
+            <li>Level 4, Central House, 26 Brandon Street, Wellington.</li>
+            <li>Phone: 04 473 7623</li>
+          </ul>
+          </p>
+
+          <p>
+          <ul>
+            <li>RESPONSE Trust</li>
+            <li>Betsan Martin: betsan@response.org.nz</li>
+            <li>Te Kawehau Hoskins: tk.hoskins@auckland.ac.nz</li>
+            <li>Maria Humphries: mariah@waikato.ac.nz</li>
+            <li>Geographical coverage: Nationwide</li>
+            <li>Main issues: “Global water and governance issues”</li>
+          </ul>
+          </p>
+
+          <p>
+          <ul>
+            <li>Water Action Initiative New Zealand</li>
+            <li>Email: contact@wainz.org.nz</li>
+            <li>Main issues: water quality</li>
+          </ul>
+          </p>
+
+          <p>
+          <ul>
+            <li>Wellington Botanical Society</li>
+            <li>Address: PO Box 10-412, Wellington, 6143</li>
+            <li>Geographical coverage: Wellington region</li>
+            <li>Main issues: The conservation and protection of New Zealand plants</li>
+          </ul>
+          </p>
+        </div>
+
+        <!-- Nelson Marlborough -->
+        <div>
+          <p>
+          <ul>
+            <li>Friends of Nelson Haven and Tasman Bay</li>
+            <li>Email: em@nelsonhaven.org.nz</li>
+            <li>Address: P.O.Box 365, Nelson 7040</li>
+            <li>Geographical coverage: Nelson</li>
+            <li>Main issues: To protect the coastal environment in the Nelson region</li>
+          </ul>
+          </p>
+
+          <p>
+          <ul>
+            <li>Friends of Golden Bay</li>
+            <li>Phone: (03) 524 8072</li>
+            <li>Address: Collingwood, Tasman</li>
+            <li>Geographical coverage: Golden Bay</li>
+            <li>Main issues: the environmental impacts related to marine farming</li>
+          </ul>
+          </p>
+        </div>
+
+        <!-- West Coast -->
+        <div>
+          <p>
+          <ul>
+            <li>West Coast Environment Network</li>
+            <li>Geographical coverage: West Coast of the South Island</li>
+            <li>Main issues: mining, climate justice</li>
+            <li>Email: wcent@riseup.net</li>
+          </ul>
+          </p>
+
+          <p>
+          <ul>
+            <li>West Coast Blue Penguin Trust</li>
+            <li>Geographical coverage: West Coast of the South Island</li>
+            <li>Main issues: conservation and protection of seabirds and blue penguins</li>
+          </ul>
+          </p>
+        </div>
+
+        <!-- Canterbury -->
+        <div>
+          <p>
+          <ul>
+            <li>Orari River Protection Group</li>
+            <li>Phone: (03) 696 3888</li>
+            <li>Geographical coverage: Orari River in South Canterbury</li>
+            <li>Main issues: to prevent any degradation of the Orari River</li>
+          </ul>
+          </p>
+
+          <p>
+          <ul>
+            <li>Royal Forest and Bird Protection Society North Canterbury Branch</li>
+            <li>Email: membership@forestandbird.org.nz</li>
+            <li>Phone: 03 940 5523</li><br>
+
+            <li>Christchurch Office</li>
+            <li>11/75 Gloucester Street</li>
+            <li>PO Box 2516</li>
+            <li>Christchurch Central 8140</li>
+          </ul>
+          </p>
+
+          <p>
+          <ul>
+            <li>Sustainable Otautahi Christchurch</li>
+            <li>Address: PO Box 2216, Christchurch</li>
+            <li>Email: info@sustainablechristchurch.org.nz</li>
+            <li>Geographical coverage: Canterbury region focusing on Christchurch</li>
+            <li>Main issues: Making Christchurch a sustainable city</li>
+          </ul>
+          </p>
+
+          <p>
+          <ul>
+            <li>350.org Christchurch</li>
+            <li>Email: 350@350.org.nz</li>
+            <li>Phone: 021 107 3937</li>
+            <li>Location: WEA, 59 Gloucester Street, Christchurch Central, Christchurch 8011</li>
+            <li>Postal address: C/- Torfrida Wainwright, 12 Falcon Street, New Brighton, Christchurch 8061</li>
+            <li>Main issues: worldwide network of citizens’ groups working for climate action</li>
+          </ul>
+          </p>
+        </div>
+
+        <!-- Southland/Otago -->
+        <div>
+          <p>
+          <ul>
+            <li>Coal Action Network Aotearoa</li>
+            <li>Nationwide</li>
+            <li>Main issues: climate campaigns, climate justice, phasing out coal and lignite mining</li>
+          </ul>
+          </p>
+
+          <p>
+          <ul>
+            <li>New Zealand Sealion Trust</li>
+            <li>Email: info@sealiontrust.org.nz</li>
+            <li>Address: New Zealand Sea Lion Trust</li>
+            <li>PO Box 6012</li>
+            <li>Dunedin 9059</li>
+            <li>Main issues: Supports ongoing research on the small population of New Zealand’s only endemic seal.
+            </li>
+          </ul>
+          </p>
+
+          <p>
+          <ul>
+            <li>Save the Otago Peninsula</li>
+            <li>Phone: (03) 478 0339</li>
+            <li>Geographical coverage: Otago Peninsula</li>
+            <li>Main issues: Maintaining natural environments on the Otago Peninsula</li>
+          </ul>
+          </p>
+
+          <p>
+          <ul>
+            <li>South Coast Environment Society</li>
+            <li>Phone: (03) 234 8717</li>
+            <li>Address:154 Palmerston Street, Riverton 9822, Southland</li>
+            <li>Geographical coverage: Western Southland</li>
+            <li>Main issues: Providing information about the South Coast ecology and promoting sustainable
+              lifestyles</li>
+          </ul>
+          </p>
+
+          <p>
+          <ul>
+            <li>Yellow-Eyed Penguin Trust</li>
+            <li>Phone: (03) 479 0011</li>
+            <li>Address: PO Box 5409, Dunedin 9058</li>
+            <li>Geographical coverage: The range of the yellow-eyed penguin, southern New Zealand</li>
+            <li>Main issues: Recovery and conservation of the Yellow-eyed penguin population</li>
+          </ul>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="volunteer">
+    <div class="volunteer__heading">
+      <h1 id="volunteer">Volunteer / Tūao mai</h1>
+    </div>
+    <div class="volunteer__intro text center--large">
+      <p>Now and then ECO has opportunities for volunteer work. We are looking for people with these skills in
+        particular:
+      <ul>
+        <li>Scanning documents and inputting information into a database</li>
+        <li>Fundraising, grants and sponsorship applications</li>
+        <li>Library organisation and filing skills for our Resource Centre</li>
+        <li>Folding and labelling newsletters for bulk mail-out</li>
+        <li>Help with stalls or events</li>
+      </ul>
+      </p>
+      <p>Please contact the ECO Office to register your interest in being a volunteer by phoning 04 385 7545 or
+        email
+        below.
+      </p>
+
+      <button class="button button--read" data-maori="Īmēria">Email</button>
+    </div>
+  </div>
+
+
+
+  <div class="footer">
+    <div class="footer__section">
+      <ul>
+        <li><a href="../html/about_us.html">About Us</a></li>
+        <li><a href="../html/about_us.html#whatwedo">What We Do</a></li>
+        <li><a href="../html/about_us.html#keyissues">Key Issues</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__section">
+      <ul>
+        <li><a href="../html/support_us.html">Support Us</a></li>
+        <li><a href="../html/support_us.html#donate">Donate</a></li>
+        <li><a href="../html/support_us.html#friend">Become a Friend</a></li>
+        <li><a href="../html/support_us.html#member">Become a Member</a></li>
+        <li><a href="../html/support_us.html#volunteer">Volunteer</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__section">
+      <p>
+      <ul>
+        <h1><a href="../html/about_us.html#contactus">Contact Us</a></h1>
+        <li>Environment and Conservation</li>
+        <li>Organisations of NZ</li>
+        <li>Level 2</li>
+        <li>126 Vivian St</li>
+        <li>Wellington 6011</li>
+      </ul>
+      </p>
+      <p>
+      <ul>
+        <li>PO Box 11-057</li>
+        <li>Wellington</li>
+        <li>New Zealand 6142</li>
+      </ul>
+      </p>
+      <p>
+      <ul>
+        <li>Mary Dinniss</li>
+        <li>Executive Officer (Office Manager)</li>
+        <li>Phone/Fax: 04 385-7545</li>
+        <li>Email: eco@eco.org.nz</li>
+      </ul>
+      </p>
+    </div>
+
+    <div class="footer__section">
+      <div class="footer__subscribe">
+        <h1>Subscribe to Tieke</h1>
+        <p>Fill out the form below to find out what is happening every week near you.<br>
+        </p>
+        <form>
+          <input type="email" id="email" class="long" placeholder="Email Address">
+          <button class="button button--long button--submit" data-maori="Ohauru mai">Subscribe</button>
+        </form>
+        <div class="footer__social">
+          <a href="https://www.facebook.com/econz" target="_blank" rel="noopener noreferrer">
+            <div class="button_box">
+              <img src="../buttons/fb.png">
+              <div class="button_hover">
+                <img src="../buttons/fb_hover.png">
+              </div>
+            </div>
+          </a>
+          <a href="https://mobile.twitter.com/econewzealand" target="_blank" rel="noopener noreferrer">
+            <div class="button_box">
+              <img src="../buttons/twitter.png">
+              <div class="button_hover">
+                <img src="../buttons/twitter_hover.png">
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" class="footer__to-top js-to-top">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+        <path
+          d="M416 352c-8.188 0-16.38-3.125-22.62-9.375L224 173.3l-169.4 169.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l192-192c12.5-12.5 32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25C432.4 348.9 424.2 352 416 352z" />
+      </svg>
+    </a>
+  </div>
+
+  </div>
+
+
+
+</body>
+
+</html>

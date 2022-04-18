@@ -1,0 +1,51 @@
+.charity {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+
+    &__banner {
+        position: relative;
+        margin: 0 2rem 0 2rem;
+    }
+
+    &__text-white {
+        position: absolute;
+        height: 100%;
+        display: flex;
+        padding-left: 2rem;
+        justify-content: center;
+        flex-direction: column;
+        color: $white;
+
+        h1 {
+            font-size: $font-xlarge;
+            font-weight: $heavy-weight;
+        }
+    
+        p {
+            font-size: $font-xsmall;
+            font-weight: $regular-weight;
+        }
+    }
+
+    &__image {
+        width: 100%;
+    }
+
+
+}
+
+
+
+// mobile
+@media (max-width: 1200px) {
+    .charity {
+        h1 {
+            font-size: $font-small;
+        }
+
+        p {
+            font-size: $font-xxsmall;
+        }
+    }
+}

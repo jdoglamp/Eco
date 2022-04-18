@@ -1,0 +1,9 @@
+
+.photo-links{
+  @include gridHorizontal();
+}
+
+.photo-links__photo {
+  padding: 2rem;
+  border-radius: 4px;
+}

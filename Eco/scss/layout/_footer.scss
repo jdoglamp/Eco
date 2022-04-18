@@ -1,0 +1,161 @@
+.footer {
+  background-color: $primary;
+  color: $white;
+  display: grid;
+  padding: 3rem;
+
+  p {
+    font-size: 14px;
+  }
+
+  li {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 18px;
+    padding-bottom: 1rem;
+    font-weight: $heavy-weight;
+  }
+
+  ul {
+    padding-bottom: 1.5rem;
+  }
+
+  grid-template-columns:repeat(auto-fit, minmax(300px,
+      /* min value */
+      1fr
+      /* max value */
+    ));
+}
+
+.footer__section {
+  padding: 1rem;
+
+  li {
+    list-style: none;
+  }
+
+  a:link {
+    color: $white;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: $secondary;
+    text-decoration: none;
+  }
+
+  a:active {
+    color: $white;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $cream;
+    text-decoration: none;
+  }
+
+  &:nth-child(3) {
+    border-left: 1px solid $white;
+  }
+
+  h1 {
+
+    a:link {
+      color: $white;
+      font-size: 20px;
+      padding-bottom: 1rem;
+      font-weight: $heavy-weight;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: $secondary;
+      font-size: 20px;
+      padding-bottom: 1rem;
+      font-weight: $heavy-weight;
+      text-decoration: none;
+    }
+
+    a:active {
+      color: $white;
+      font-size: 20px;
+      padding-bottom: 1rem;
+      font-weight: $heavy-weight;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: $cream;
+      font-size: 20px;
+      padding-bottom: 1rem;
+      font-weight: $heavy-weight;
+      text-decoration: none;
+    }
+  }
+
+}
+
+
+.footer__subscribe {
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    max-width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 20px 0 20px 0;
+  }
+
+  input {
+    margin-bottom: 8px;
+    height: 30px;
+    padding: 0 8px;
+    max-width: 100%;
+    border-radius: 30px;
+    border: none;
+    flex: 1 0 300px;
+    max-width: 100%;
+  }
+
+}
+
+.footer__social {
+  position: static;
+  width: auto;
+  float: right;
+
+  img {
+    width: 2rem;
+    padding-left: 0.4rem;
+  }
+}
+
+.footer__to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $secondary;
+  border-radius: 6px;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .4s;
+
+  &.active {
+    pointer-events: auto;
+    opacity: 1;
+  }
+
+  svg {
+    width: 40%;
+  }
+
+}

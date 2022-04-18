@@ -1,0 +1,237 @@
+//Kyle helped me with this
+
+// Main button class
+.button {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    color: $primary;
+    background:$white;
+    border-radius: 15px;
+    border: 1px solid $primary;
+    content: $white;
+    padding: 12px 24px;
+    &,
+    &:before {
+        text-align: center;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &:before {
+        display: block;
+        content: attr(data-maori);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        color: transparent;
+        padding: 12px 0;
+    }
+
+    &:hover {
+        background-color: $secondary;
+
+        &:before {
+            color: $white;
+        }
+    }
+
+    &:active {
+        opacity: 0.6;
+    }
+}
+
+
+
+// Button Themes
+.button--primary {
+    color: $white;
+    background:$primary;
+    border: 1px solid $primary;
+
+    &:hover {
+        background-color: $secondary;
+        border: $secondary;
+        color: transparent;
+
+        &:before {
+            color: $grey;
+        }
+    }
+
+}
+
+//submit button
+.button--submit {
+    color: $white;
+    background:$secondary;
+    border: 1px solid $secondary;
+
+    &:hover {
+        background-color: $cream;
+        border: $cream;
+
+        &:before {
+            color: $grey;
+        }
+    }
+
+}
+
+//read more button
+.button--read {
+    color: $primary;
+    background: $white;
+    border: 1px solid $primary;
+    
+    &:hover {
+        background-color: $secondary;
+        border-color: $secondary;
+        color: transparent;
+
+        &:before {
+            color: $grey;
+        }
+    }
+}
+
+//nav bar button
+.button--nav {
+    color: $grey;
+    background: $white;
+    border: none;
+    
+    &:hover {
+        border-color: $red;
+        color: transparent;
+        background-color: transparent;
+
+        &:before {
+            color: $red;
+        }
+    }
+
+}
+
+//payment button
+.button--payment {
+    border-color: $primary;
+    color: $white;
+    background-color: $primary;
+    
+    &:hover {
+        border-color: $secondary;
+        color: transparent;
+        background-color: $secondary;
+
+        &:before {
+            color: $white;
+        }
+    }
+}
+
+//selected nav bar button
+.button--nav-action {
+    color: $red;
+    background: $white;
+    border-color: $red;
+    
+    &:hover {
+        border-color: $red;
+        color: transparent;
+        background-color: transparent;
+
+        &:before {
+            color: $red;
+        }
+    }
+
+}
+
+//donate button
+.button--donate {
+    color: $white;
+    background: $red;
+    border: none;
+    
+    &:hover {
+        border-color: $red;
+        color: transparent;
+        background-color: $white;
+
+        &:before {
+            color: $red;
+        }
+    }
+
+}
+
+
+// Button Sizes
+.button--small {
+    border: 1px solid $primary;
+    padding: 8px 16px;
+    border-radius: 10px;
+    &,
+    &:before {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    &:before {
+        padding: 8px 0;
+    }
+    &:hover {
+        border-width: 1px;
+    }
+}
+
+
+.button--medium {
+    padding: 12px 36px;
+    border-radius: 15px;
+    &,
+    &:before {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    &:before {
+        padding: 12px 0;
+    }
+}
+
+.button--large {
+    border: 2px solid $primary;
+    padding: 16px 32px;
+    &,
+    &:before {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    &:before {
+        padding: 16px 0;
+    }
+    &:hover {
+        border-width: 2px;
+    }
+}
+
+.button--long {
+    padding: 8px 42px;
+    border-radius: 50px;
+    width: 100%;
+    margin: 0;
+
+    &,
+    &:before {
+        font-size: 14px;
+        line-height: 12px;
+        padding: 8px 0;
+    }
+    &:before {
+        padding: 8px 0;
+    }
+    &:hover {
+        color: transparent;
+    }
+}

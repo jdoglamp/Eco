@@ -1,0 +1,16 @@
+//Kyle helped me with this
+.center {
+    margin: 0 auto;
+    &--large {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    &--medium {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    &--small {
+        max-width: 640px;
+        margin: 0 auto;
+    }
+}

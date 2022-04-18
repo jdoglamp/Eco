@@ -1,0 +1,41 @@
+
+.aboutus_grid {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas:
+    "navbar"
+    "img-banner"
+    "intro"
+    "what-we-do"
+    "key-issues"
+    "contact"
+    "footer" ;
+
+    .navbar{
+        grid-area: navbar;
+    }
+
+    .img-banner{
+        grid-area: img-banner;
+    }
+
+    .intro{
+        grid-area: intro;
+    }
+
+    .what-we-do{
+        grid-area: what-we-do;
+    }
+
+    .key-issues{
+        grid-area: key-issues;
+    }
+
+    .contact{
+        grid-area: contact;
+    }
+
+    .footer{
+        grid-area: footer;
+    }
+}

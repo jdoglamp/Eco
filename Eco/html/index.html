@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="../scss/main.css" />
+  <link rel="stylesheet" href="../html/about_us.html" />
+  <link rel="stylesheet" href="../html/news.html" />
+  <link rel="stylesheet" href="../html/support_us.html" />
+
+  <script src="../main.js"></script>
+
+  <link rel="stylesheet" href="https://use.typekit.net/dno2qun.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>ECO - Environment and Conservation Organisations of Aotearoa New Zealand</title>
+  <link rel="icon" type="image/x-icon" href="../img/logo.jpeg">
+</head>
+
+<body>
+  <div class="grid">
+    <div class="navbar">
+      <ul class="navbar__menu">
+        <li><a href=index.html><img src="../img/logo.jpeg"></a></li>
+
+        <li><a href=index.html>
+            <button class="button button--nav-action button--medium" data-maori="Kāinga">Home</button>
+          </a></li>
+
+        <li><a href=about_us.html>
+            <button class="button button--nav button--medium" data-maori="Mō Mātou">About Us</button>
+          </a></li>
+
+        <li><a href="news.html">
+            <button class="button button--nav button--medium" data-maori="Ngā Pānui">News</button>
+          </a></li>
+
+        <li><a href=support_us.html>
+            <button class="button button--nav button--medium" data-maori="Tautoko Mai">Support Us</button>
+          </a></li>
+
+        <li>
+          <a href="support_us.html#donate">
+            <button class="button button--donate button--medium" data-maori="Takoha Mai">Donate</button>
+          </a>
+        </li>
+
+        <li>
+          <div class="navbar__search-bar">
+            <input type="text" placeholder="Search.." name="search">
+            <img src="../buttons/search.png">
+          </div>
+        </li>
+
+      </ul>
+
+
+      <button class="navbar-hamburger js-hamburger">
+        <div class="navbar-hamburger__bar"></div>
+      </button>
+
+      <nav class="navbar__mobile-nav js-mobile-nav">
+        <a href="../html/index.html">Home</a>
+        <a href="../html/about_us.html">About Us</a>
+        <a href="../html/news.html">News</a>
+        <a href="../html/support_us.html">Support Us</a>
+        <a href="support_us.html#donate">Donate</a>
+      </nav>
+
+    </div>
+
+
+    <div class="slider">
+      <div class="slider__container">
+
+        <div class="slider__slide js-slide" id="coral">
+          <div class="slider-text">
+            <h2>Protect The<br> Coral Reefs From <br>Bleaching</h2>
+            <a href="support_us.html">
+              <button class="button button--medium button--primary" data-maori="Tautoko mai">Support us</button>
+            </a>
+          </div>
+          <img src="../img/coral reef.jpg" style="width:100%">
+        </div>
+
+        <div class="slider__slide js-slide" id="penguins">
+          <div class="slider-text">
+            <h2>Help Protect the<br> Southern Ocean and <br>the Ross Sea</h2>
+            <a href="about_us.html">
+              <button class="button button--medium button--primary" data-maori="Ākona ake">Learn more</button>
+            </a>
+          </div>
+          <img src="../img/peguins.jpg" style="width:100%">
+        </div>
+
+        <div class="slider__slide js-slide" id="plastic">
+          <div class="slider-text">
+            <h2>Plastic Free July</h2>
+            <p>A simple idea <br>with a huge impact</p>
+            <a href="about_us.html">
+              <button class="button button--medium button--primary" data-maori="Ākona ake">Learn more</button>
+            </a>
+          </div>
+          <img src="../img/plastic_free.jpg" style="width:100%">
+        </div>
+
+        <div class="slider__indicators">
+          <span class="slider__dot js-dot"></span>
+          <span class="slider__dot js-dot"></span>
+          <span class="slider__dot js-dot"></span>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="photo-links">
+      <div class="photo-links__photo">
+        <a href="../html/news.html#news">
+          <div class="button_box">
+            <img src="../img/current_events.jpg" alt="Default Image" style="width:100%;">
+            <div class="button_hover">
+              <img src="../img/current_events_hover.jpg" alt="Profile Image" style="width:100%;">
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="photo-links__photo">
+        <a href="../html/about_us.html#keyissues">
+          <div class="button_box">
+            <img src="../img/key_issues.jpg" alt="Default Image" style="width:100%;">
+            <div class="button_hover">
+              <img src="../img/key_issues_hover.jpg" alt="Profile Image" style="width:100%;">
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="photo-links__photo">
+        <a href="../html/support_us.html#donate">
+          <div class="button_box">
+            <img src="../img/donate.jpg" alt="Default Image" style="width:100%;">
+            <div class="button_hover">
+              <img src="../img/donate_hover.jpg" alt="Profile Image" style="width:100%;">
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+
+    <div class="charity">
+      <div class="charity__banner">
+        <div class="charity__text-white">
+          <h1>A Charity You Can Trust<br>
+            He umanga aroha whai mana</h1>
+          <p>ECO is a registered charitable entity under the Charities Act 2005<br><br>
+            Registration no CC41565<br>
+
+            ECO GST No is 0296-11327</p>
+        </div>
+        <img class="charity__image" src="../img/charity.jpg">
+      </div>
+    </div>
+
+    <div class="news">
+      <div class="news__story">
+        <img src="../img/park.jpg" style="width:100%;">
+        <div class="news__text">
+          <p>Trawling and dredging the Hauraki Marine Park should end<br>19 Nov 2021</p>
+          <a href="../html/news.html#news">
+            <button class="button button--small button--read" data-maori="Pānui ake">Read more</button>
+          </a>
+        </div>
+      </div>
+      <div class="news__story">
+        <img src="../img/fish.jpg" style="width:100%;">
+        <div class="news__text">
+          <p>CCAMLR: Another Missed Opportunity to Protect Southern Ocean<br>29 Oct 2021</p>
+          <a href="../html/news.html#news">
+            <button class="button button--small button--read" data-maori="Pānui ake">Read more</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="news__story">
+        <img src="../img/fish2.jpg" style="width:100%;">
+        <div class="news__text">
+          <p>Bottom trawling destruction continues after NZ resisted South Pacific ocean protection measures<br>12 Feb
+            2021</p>
+          <a href="../html/news.html#news">
+            <button class="button button--small button--read" data-maori="Pānui ake">Read more</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="footer">
+      <div class="footer__section">
+
+        <ul>
+          <li><a href="../html/about_us.html">About Us</a></li>
+          <li><a href="../html/about_us.html#whatwedo">What We Do</a></li>
+          <li><a href="../html/about_us.html#keyissues">Key Issues</a></li>
+        </ul>
+
+      </div>
+
+      <div class="footer__section">
+        <ul>
+          <li><a href="../html/support_us.html">Support Us</a></li>
+          <li><a href="../html/support_us.html#donate">Donate</a></li>
+          <li><a href="../html/support_us.html#friend">Become a Friend</a></li>
+          <li><a href="../html/support_us.html#member">Become a Member</a></li>
+          <li><a href="../html/support_us.html#volunteer">Volunteer</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__section">
+        <p>
+        <ul>
+          <h1><a href="../html/about_us.html#contactus">Contact Us</a></h1>
+          <li>Environment and Conservation</li>
+          <li>Organisations of NZ</li>
+          <li>Level 2</li>
+          <li>126 Vivian St</li>
+          <li>Wellington 6011</li>
+        </ul>
+        </p>
+        <p>
+        <ul>
+          <li>PO Box 11-057</li>
+          <li>Wellington</li>
+          <li>New Zealand 6142</li>
+        </ul>
+        </p>
+        <p>
+        <ul>
+          <li>Mary Dinniss</li>
+          <li>Executive Officer (Office Manager)</li>
+          <li>Phone/Fax: 04 385-7545</li>
+          <li>Email: eco@eco.org.nz</li>
+        </ul>
+        </p>
+      </div>
+
+      <div class="footer__section">
+        <div class="footer__subscribe">
+          <h1>Subscribe to Tieke</h1>
+          <p>Fill out the form below to find out what is happening every week near you.<br>
+          </p>
+          <form>
+            <input type="email" id="email" class="long" placeholder="Email Address">
+            <button class="button button--long button--submit" data-maori="Ohauru mai">Subscribe</button>
+          </form>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/econz" target="_blank" rel="noopener noreferrer">
+              <div class="button_box">
+                <img src="../buttons/fb.png">
+                <div class="button_hover">
+                  <img src="../buttons/fb_hover.png">
+                </div>
+              </div>
+            </a>
+            <a href="https://mobile.twitter.com/econewzealand" target="_blank" rel="noopener noreferrer">
+              <div class="button_box">
+                <img src="../buttons/twitter.png">
+                <div class="button_hover">
+                  <img src="../buttons/twitter_hover.png">
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="footer__to-top js-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path
+            d="M416 352c-8.188 0-16.38-3.125-22.62-9.375L224 173.3l-169.4 169.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l192-192c12.5-12.5 32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25C432.4 348.9 424.2 352 416 352z" />
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</body>
+
+</html>

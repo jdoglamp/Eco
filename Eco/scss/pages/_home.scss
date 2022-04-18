@@ -1,0 +1,38 @@
+
+
+.home_grid {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+    "navbar"
+    "slider"
+    "photolinks"
+    "charity_banner"
+    "newsstories"
+    "footer" ;
+
+    .navbar{
+        grid-area: navbar;
+
+    }
+
+    .slider{
+        grid-area: slider;
+    }
+
+    .photo_links{
+        grid-area: photolinks;
+    }
+
+    .charity_banner{
+        grid-area: charity_banner;
+    }
+
+    .news_stories{
+        grid-area: newsstories;
+    }
+
+    .footer{
+        grid-area: footer;
+    }
+}
